@@ -1,0 +1,269 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
+} 
+.app-container{
+    background-image:linear-gradient(to right ,#FFF3B1,#FFB7EB);
+    min-height: 100vh;
+    margin: 0;
+    padding:0;
+    width: 100%;
+}
+
+/*navbar*/
+
+.navbar-elements{
+   height: 9vh;
+}
+.navbar-elements ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    background-color: #FF7171;
+}
+
+.navbar-elements ul li{
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.navbar-elements button,img{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 30px;
+}
+@media (min-width:641px)  {
+    .navbar-elements ul li{
+    font-size: 15px;
+    font-weight: 800;
+    } 
+    .navbar-elements button,img{
+        height: 40px;
+    }
+
+}
+@media (min-width:961px)  { 
+    .navbar-elements ul li{
+        font-size: 25px;
+        font-weight: 800;
+    }
+    .navbar-elements button,img{
+        height: 50px;
+    }
+ }
+
+ /**section1**/
+
+.section1-main-container{
+    display: flex;
+    flex-direction: row;
+}
+.section1-text-container{
+    display: flex;
+    flex-direction: column;
+    padding:10%;
+    width: 50%;
+    background-color: rgba(168, 152, 152, 0.403);
+}
+.section1-text-container h1{
+    font-size: 15px;
+    margin: 10px 0px;
+}
+.section1-text-container p{
+    font-size: 10px;
+    margin: 10px 0px;
+}
+.section1-text-container button{
+    align-self: flex-start;
+    background-color:#FF7171 ;
+    border: none;
+    padding: 10px 30px;
+    color:white;
+    cursor: pointer;
+    margin: 10px 0px;
+    font-size: 10px;
+}
+
+/*section1 text container media queries*/
+
+@media (min-width:641px)  {
+
+    .section1-text-container h1{
+        font-size: 25px;
+        margin: 15px 0px;
+    }
+    .section1-text-container p{
+        font-size: 17px;
+        margin: 15px 0px;
+    }
+    .section1-text-container button{
+        padding: 10px 40px;
+        margin: 15px 0px;
+        font-size: 15px;
+    }
+}
+@media (min-width:961px)  { 
+    .section1-text-container h1{
+        font-size: 35px;
+        margin: 20px 0px;
+    }
+    .section1-text-container p{
+        font-size: 25px;
+        margin: 20px 0px;
+    }
+    .section1-text-container button{
+        padding: 10px 60px;
+        margin: 20px 0px;
+        font-size: 28px;
+    }
+ }
+
+ /*section1 image*/
+.section1-image-container{
+    width: 50%;
+}
+.section1-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/**section2**/
+
+.section2-main-container{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    max-height: 700px;
+}
+
+/*section2-image-container*/
+.section2-image-container{
+    width: 50%;
+    height:100vh;
+    padding: 5% 5%;
+    display: flex;
+    align-items: center;
+   
+}
+.section2-image-container1{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+}
+
+.section2-image-container1 img{
+    object-fit: cover;
+    height: 49.5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+}
+.section2-image-last{
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+
+}
+
+
+/* section2 card container */
+
+.section2-card-container{
+    padding-left: 10px;
+    width: 50%;
+}
+.section2-card{
+    background-color: #FF7171;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 70%;
+}
+.section2-card p{
+    font-size: 10px;
+    font-style: normal;
+    margin-bottom: 8px;
+}
+.section2-card h1{
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+.section2-card button{
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-top: 8px;
+    font-size: 15px;
+}
+.icon-arrow{
+    height: 30px;
+    margin-left: 10px;
+}
+/*media queries card text*/
+
+@media (min-width:641px)  {
+
+    .section2-card{
+        background-color: #FF7171;
+        padding: 10px;
+        max-height: 400px;
+    }
+    .section2-card h1{
+        font-size: 1.7rem;
+        font-weight: 800;
+        letter-spacing: 6px;
+    }
+    .section2-card p{
+        font-size: 15px;
+        font-style: normal;
+        margin-bottom: 8px;
+    }
+    .section2-card button{
+
+        font-size: 20px;
+    }
+
+}
+@media (min-width:961px)  { 
+    .section2-card{
+        background-color: #FF7171;
+        padding: 10px;
+        max-height: 400px;
+    }
+    .section2-card h1{
+        font-size: 3rem;
+        font-weight: 800;
+        letter-spacing: 6px;
+    }
+    .section2-card p{
+        font-size: 15px;
+        font-style: normal;
+        margin-bottom: 8px;
+    }
+    .section2-card button{
+
+        font-size: 20px;
+    }
+ }
